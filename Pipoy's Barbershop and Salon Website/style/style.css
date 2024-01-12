@@ -1,0 +1,295 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'poppins', sans-serif;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  height: 100px;
+}
+
+header h1{
+  padding-left: 30px;
+  font-size: 25px;
+  margin: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+}
+
+nav a:hover{
+  color: #b6b5b5;
+}
+
+section {
+  padding: 20px;
+}
+
+#home {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/bg.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+}
+
+#home h2 {
+  font-size: 3em;
+}
+
+#home p {
+  font-size: 1.8em;
+}
+
+#home a{
+  margin-top: 30px;
+  padding: 15px;
+  text-decoration: none;
+  background-color: gray;
+  color: white;
+  border-radius: 30px;
+  font-size: 25px;
+  width: 180px;
+  text-shadow: 1px;
+}
+
+#home a:hover{
+  background-color: #a8a8a8;
+}
+
+#about {
+  background-color: #fff; 
+  margin-top: 20px;
+  margin-bottom: 10px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.about-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#about h2 {
+  font-size: 45px;
+  color: #333; 
+  margin-bottom: 20px;
+}
+
+#about p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #555; 
+}
+
+#about img{
+  padding-top: 20px;
+  max-width: 100%;
+  height: 700px;
+}
+
+#services {
+  background-color: #f7f7f7;
+  padding: 50px;
+  text-align: center;
+}
+#services h2{
+  font-size: 45px;
+  color: #333; 
+  margin-bottom: 20px;
+}
+.services-container {
+  display: flex;
+  overflow-x: auto; 
+  white-space: nowrap; 
+}
+
+.service {
+  width: 30%;
+  margin: 30px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  text-align: center;
+  align-items: center;
+  display: inline-block;   
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+.service img {
+  padding-top: 20px;
+  max-width: 100%;
+  height: 600px;
+  border-radius: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.service:hover img {
+  transform: scale(1.03); 
+}
+
+.service h3 {
+  margin-top: 10px;
+  color: #333; 
+}
+
+.price {
+  font-weight: bold;
+  color: #007bff;
+}
+
+.service p {
+  color: #555; 
+  max-width: 100%; 
+  margin-top: 10px; 
+  font-size: 15px;
+}
+
+.service .price{
+  font-size: 20px;
+}
+
+#appointments {
+  background-color: #f7f7f7;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  text-align: center;
+  align-items: center;
+}
+
+#appointments h2{
+  font-size: 45px;
+  color: #333; 
+  margin-bottom: 30px;
+}
+
+#appointments p {
+  text-align: center; 
+  color: #555; 
+  margin-bottom: 60px; 
+}
+
+#appointmentForm {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+#appointmentForm button {
+  align-items: center; 
+}
+
+
+label {
+  margin-top: 10px;
+  color: #333; 
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  height: 50px;
+}
+
+button {
+  width: 100%;
+  background-color: gray; 
+  color: #fff; 
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 50px;
+}
+
+button:hover {
+  background-color: #333;
+}
+
+#contact {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+}
+
+#map {
+  margin-left: 50px;
+  width: 60%; 
+  height: 500px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#map iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+#contact-info {
+  margin-top: 50px;
+  padding-left: 50px;
+  text-align: left;
+  width: 30%; 
+}
+
+#contact-info h2 {
+  font-size: 35px;
+  color: #333;
+  margin-bottom: 50px;
+}
+
+#contact-info p {
+  color: #555;
+  font-size: 25px;
+  line-height: 1.6;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+}
+
+footer p{
+  padding-top: 8px;
+}
